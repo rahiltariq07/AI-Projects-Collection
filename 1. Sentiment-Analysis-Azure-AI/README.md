@@ -45,17 +45,22 @@ root/
 ### 1️⃣ Backend Setup (API)
 
 1. Open the `SentimentApi` folder in Visual Studio.
-2. Restore NuGet packages:
+2. Replace your Azure Text Analytics endpoint and key in Controller file:
+    ```bash
+    private const string endpoint = "<Your-Azure-Endpoint>";
+    private const string apiKey = "<Your-Azure-Key>";
+    ```
+3. Restore NuGet packages:
 
    ```bash
    dotnet restore
    ```
-3. Run the API:
+4. Run the API:
 
    ```bash
    dotnet run
    ```
-4. The API will be available at:
+5. The API will be available at:
 
    ```
    https://localhost:5001
